@@ -1,7 +1,23 @@
-venv/
+# Python
 __pycache__/
 *.pyc
-data.csv
-credentials.json
-*.json
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# Environment variables
 .env
+
+# Google credentials (КРИТИЧНО)
+credentials/
+*.json
+
+# CSV data (если не хочешь пушить данные)
+*.csv
+
+# OS
+.DS_Store
+Thumbs.db

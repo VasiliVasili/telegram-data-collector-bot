@@ -2,14 +2,13 @@ import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
 
-# --- подключение один раз (это важно) ---
 scope = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive"
 ]
 
 creds = Credentials.from_service_account_file(
-    "telegram-bot-project-490909-bc267e80303d.json",
+    "credentials.json/telegram-bot-project-490909-bc267e80303d.json",  # проверь путь!
     scopes=scope
 )
 
